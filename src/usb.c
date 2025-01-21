@@ -86,22 +86,20 @@ static const struct usb_string_descriptor string_lang_list = {
 
 /* Generated using unicore-mx/scripts/usb-strings.py */
 static const struct usb_string_descriptor product_string = {
-	.bLength = USB_DT_STRING_SIZE(9),
+	.bLength = USB_DT_STRING_SIZE(21),
 	.bDescriptorType = USB_DT_STRING,
 	/* "DirtyJTAG" */
 	.wData = {
-		0x0044, 0x0069, 0x0072, 0x0074, 0x0079, 0x004a, 0x0054, 0x0041,
-		0x0047
+		0x0053, 0x0054, 0x0020, 0x004d, 0x0069, 0x0063, 0x0072, 0x006f, 0x0020, 0x0043, 0x006f, 0x006e, 0x006e, 0x0065, 0x0063, 0x0074, 0x0020, 0x004c, 0x0069, 0x0074, 0x0065
 	}
 };
 
 static const struct usb_string_descriptor man_string = {
-	.bLength = USB_DT_STRING_SIZE(11),
+	.bLength = USB_DT_STRING_SIZE(2),
 	.bDescriptorType = USB_DT_STRING,
 	/* Jean THOMAS */
 	.wData = {
-		0x004a, 0x0065, 0x0061, 0x006e, 0x0020, 0x0054, 0x0048, 0x004f,
-		0x004d, 0x0041, 0x0053
+		0x0053, 0x0054
 	}
 };
 
@@ -176,12 +174,12 @@ const struct usb_device_descriptor dev_desc = {
 	.bDeviceSubClass = 0,
 	.bDeviceProtocol = 0,
 	.bMaxPacketSize0 = 64,
-	.idVendor = 0x1209,
-	.idProduct = 0xC0CA,
+	.idVendor = 0x0483,
+	.idProduct = 0x3746,
 	.bcdDevice = 0x0200,
 	.iManufacturer = 1,
 	.iProduct = 2,
-	.iSerialNumber = 3,
+	.iSerialNumber = STMCLT1000,
 	.bNumConfigurations = 1
 };
 
