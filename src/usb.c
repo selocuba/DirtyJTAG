@@ -115,7 +115,7 @@ static const struct usb_string_descriptor **string_data[1] = {
 
 static const struct usbd_info_string string = {
 	.lang_list = &string_lang_list,
-	.count = STMCLT1000,
+	.count = 13,
 	.data = string_data
 };
 
